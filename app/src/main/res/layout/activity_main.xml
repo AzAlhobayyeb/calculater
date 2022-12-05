@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="4dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="Calculate two numbers"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_num1"
+        android:hint="Write  the first number"
+        android:textSize="8sp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/tv1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_num2"
+        android:textSize="8sp"
+        android:hint="Write  the second number"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/et_num1"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_add"
+        android:layout_below="@id/et_num2"
+        android:layout_alignParentStart="true"
+        android:layout_margin="4dp"
+        app:cornerRadius="24dp"
+        android:textSize="30sp"
+        android:text="+"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_minus"
+        android:layout_toRightOf="@id/b_add"
+        android:layout_below="@id/et_num2"
+        android:layout_margin="4dp"
+        android:textSize="30sp"
+        app:cornerRadius="24dp"
+        android:text="-"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_mutli"
+        android:layout_below="@id/b_add"
+        android:layout_alignParentStart="true"
+        android:layout_margin="4dp"
+        android:textSize="30sp"
+        app:cornerRadius="24dp"
+        android:text="X"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_divide"
+        android:layout_toEndOf="@id/b_add"
+        app:cornerRadius="24dp"
+        android:layout_below="@id/b_add"
+        android:layout_margin="4dp"
+        android:textSize="30sp"
+        android:text="/"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        tools:text="2333"
+        android:gravity="center"
+        android:layout_toRightOf="@id/b_divide"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/b_add"
+        android:layout_marginTop="4dp"
+        />
+
+</RelativeLayout>
